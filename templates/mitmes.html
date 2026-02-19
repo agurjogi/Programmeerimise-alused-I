@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block title %}Külaliste tervitamine{% endblock %}
+{% block pealkiri %}6.4a – Külaliste tervitamine{% endblock %}
+
+{% block sisu %}
+<form method="post">
+  <label>Sisestage külaliste arv:
+    <input type="number" name="arv" min="1" required>
+  </label>
+  <button type="submit">Tervita</button>
+</form>
+
+{% if tulemus is not none %}
+<h2>Tulemus</h2>
+<pre>{{ tulemus }}</pre>
+{% endif %}
+{% endblock %}

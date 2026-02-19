@@ -28,14 +28,20 @@
 
 def pronksikarva_summa(fail):
     järjend = []
-    fail = open(failinimi, encoding="UTF-8")
-    for rida in fail:
+    f = open(fail, encoding="UTF-8")
+    for rida in f:
         if int(rida) <= 5:
             järjend += [int(rida)]
-    fail.close()
+    f.close()
     summa = sum(järjend)
     return summa
 
 
-failinimi = input("Sisestage failinimi: ")
-print(pronksikarva_summa(failinimi))
+def tagasi_avakuvale():
+    """Naasmine avakuvale (veebis teostab Flask malli nupp)."""
+    pass
+
+
+if __name__ == "__main__":
+    failinimi = input("Sisestage failinimi: ")
+    print(pronksikarva_summa(failinimi))
