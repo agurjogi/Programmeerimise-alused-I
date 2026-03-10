@@ -1,0 +1,13 @@
+<%- include('_header', { title: 'Kuupäev sõnena', pealkiri: '6.4c – Kuupäev sõnena', showBackLink: true }) %>
+<form method="post">
+  <label>Sisesta kuupäev kujul PP.KK.AAAA (nt 24.02.1918):
+    <input type="text" name="kuupaev" placeholder="PP.KK.AAAA" pattern="\d{2}\.\d{2}\.\d{4}" required>
+  </label>
+  <button type="submit">Teisenda</button>
+</form>
+
+<% if (tulemus !== null) { %>
+<h2>Tulemus</h2>
+<pre><%= tulemus %></pre>
+<% } %>
+<%- include('_footer') %>

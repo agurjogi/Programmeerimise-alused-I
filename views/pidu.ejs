@@ -1,0 +1,16 @@
+<%- include('_header', { title: 'Peo eelarve', pealkiri: '6.3 – Peo eelarve', showBackLink: true }) %>
+<form method="post">
+  <label>Mitu inimest on kutsutud:
+    <input type="number" name="guests" min="0" required>
+  </label>
+  <label>Mitu inimest tuleb (on teatanud):
+    <input type="number" name="yes" min="0" required>
+  </label>
+  <button type="submit">Arvuta</button>
+</form>
+
+<% if (tulemus !== null) { %>
+<h2>Tulemus</h2>
+<pre><%= tulemus %></pre>
+<% } %>
+<%- include('_footer') %>

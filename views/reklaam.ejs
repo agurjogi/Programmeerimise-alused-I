@@ -1,0 +1,16 @@
+<%- include('_header', { title: 'Reklaam (bänner)', pealkiri: '6.1 – Reklaam (bänner)', showBackLink: true }) %>
+<form method="post">
+  <label>Mitu korda soovite reklaamlauset kuvada:
+    <input type="number" name="mitu" min="1" required>
+  </label>
+  <label>Sisestage reklaamlause:
+    <input type="text" name="sisu" required>
+  </label>
+  <button type="submit">Kuva</button>
+</form>
+
+<% if (tulemus !== null) { %>
+<h2>Tulemus</h2>
+<pre><%= tulemus %></pre>
+<% } %>
+<%- include('_footer') %>
