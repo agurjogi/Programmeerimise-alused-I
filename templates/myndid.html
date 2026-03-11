@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block title %}Pronksikarva müntide summa{% endblock %}
+{% block pealkiri %}6.4b – Pronksikarva müntide summa{% endblock %}
+
+{% block sisu %}
+<form method="post">
+  <label>Faili nimi (müntide andmetega):
+    <input type="text" name="failinimi" value="myndid.txt" required>
+  </label>
+  <button type="submit">Arvuta</button>
+</form>
+
+{% if tulemus is not none %}
+<h2>Tulemus</h2>
+<pre>{{ tulemus }}</pre>
+{% endif %}
+{% endblock %}

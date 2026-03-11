@@ -24,9 +24,15 @@ def tervitus(mitmes):
     return
 
 
-i = int(input('Sisetage külaliste arv: '))
-mitmes = 1
+def tagasi_avakuvale():
+    """Naasmine avakuvale (veebis teostab Flask malli nupp)."""
+    pass
 
-while mitmes <= i:
-    tervitus(mitmes)
-    mitmes = mitmes + 1
+
+if __name__ == "__main__":
+    i = int(input('Sisetage külaliste arv: '))
+    mitmes = 1
+
+    while mitmes <= i:
+        tervitus(mitmes)
+        mitmes = mitmes + 1

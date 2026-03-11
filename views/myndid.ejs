@@ -1,0 +1,13 @@
+<%- include('_header', { title: 'Pronksikarva müntide summa', pealkiri: '6.4b – Pronksikarva müntide summa', showBackLink: true }) %>
+<form method="post">
+  <label>Faili nimi (müntide andmetega):
+    <input type="text" name="failinimi" value="myndid.txt" required>
+  </label>
+  <button type="submit">Arvuta</button>
+</form>
+
+<% if (tulemus !== null) { %>
+<h2>Tulemus</h2>
+<pre><%= tulemus %></pre>
+<% } %>
+<%- include('_footer') %>

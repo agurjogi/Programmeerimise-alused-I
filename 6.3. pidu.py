@@ -21,9 +21,15 @@ def eelarve(guests):
     return total
 
 
-guests = int(input("Mitu inimest on kutsustud? "))
-yes = int(input("Mitu inimest tuleb? "))
+def tagasi_avakuvale():
+    """Naasmine avakuvale (veebis teostab Flask malli nupp)."""
+    pass
 
-# max = eelarve(guests)
-print("Maksimaalne eelarve: " + str(eelarve(guests)))
-print("Minimaalne eelarve: " + str(eelarve(yes)))
+
+if __name__ == "__main__":
+    guests = int(input("Mitu inimest on kutsustud? "))
+    yes = int(input("Mitu inimest tuleb? "))
+
+    # max = eelarve(guests)
+    print("Maksimaalne eelarve: " + str(eelarve(guests)))
+    print("Minimaalne eelarve: " + str(eelarve(yes)))

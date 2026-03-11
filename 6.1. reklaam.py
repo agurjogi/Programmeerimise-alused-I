@@ -25,10 +25,16 @@ def banner(sisu):
     return (sisu)
 
 
-mitu = int(input("Mitu korda soovite reklaamlauset kuvada: "))
-sisu = input('Sisestage reklaamlause: ')
+def tagasi_avakuvale():
+    """Naasmine avakuvale (veebis teostab Flask malli nupp)."""
+    pass
 
-while mitu > 0:
-    banner(sisu)
-    print(sisu.upper())
-    mitu = mitu - 1
+
+if __name__ == "__main__":
+    mitu = int(input("Mitu korda soovite reklaamlauset kuvada: "))
+    sisu = input('Sisestage reklaamlause: ')
+
+    while mitu > 0:
+        banner(sisu)
+        print(sisu.upper())
+        mitu = mitu - 1

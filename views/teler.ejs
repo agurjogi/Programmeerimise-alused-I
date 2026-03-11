@@ -1,0 +1,13 @@
+<%- include('_header', { title: 'Teleri diagonaal', pealkiri: '6.2 – Teleri diagonaal', showBackLink: true }) %>
+<form method="post">
+  <label>Kaugus diivanist telerini (meetrites):
+    <input type="number" name="kaugus" step="0.1" min="0.1" required>
+  </label>
+  <button type="submit">Arvuta</button>
+</form>
+
+<% if (tulemus !== null) { %>
+<h2>Tulemus</h2>
+<pre>Teleri diagonaal: <%= tulemus %></pre>
+<% } %>
+<%- include('_footer') %>

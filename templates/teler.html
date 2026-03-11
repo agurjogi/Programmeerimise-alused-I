@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block title %}Teleri diagonaal{% endblock %}
+{% block pealkiri %}6.2 – Teleri diagonaal{% endblock %}
+
+{% block sisu %}
+<form method="post">
+  <label>Kaugus diivanist telerini (meetrites):
+    <input type="number" name="kaugus" step="0.1" min="0.1" required>
+  </label>
+  <button type="submit">Arvuta</button>
+</form>
+
+{% if tulemus is not none %}
+<h2>Tulemus</h2>
+<pre>Teleri diagonaal: {{ tulemus }}</pre>
+{% endif %}
+{% endblock %}

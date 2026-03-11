@@ -20,6 +20,12 @@ def teleri_diagonaal(kaugus):
     return diago
 
 
-kaugus = float(input("Siseta kaugus: "))
+def tagasi_avakuvale():
+    """Naasmine avakuvale (veebis teostab Flask malli nupp)."""
+    pass
 
-print(teleri_diagonaal(kaugus))
+
+if __name__ == "__main__":
+    kaugus = float(input("Siseta kaugus: "))
+
+    print(teleri_diagonaal(kaugus))

@@ -39,6 +39,12 @@ def kuupäev_sõnena(kuupaev):
     return kuupaev_elemendid[0] + ". " + kuu_nimi(int(kuupaev_elemendid[1])) + " " + kuupaev_elemendid[2] + ". a"
 
 
-kuupäev = input("Sisesta kuupäev kujul DD.MM.YYYY: ")
+def tagasi_avakuvale():
+    """Naasmine avakuvale (veebis teostab Flask malli nupp)."""
+    pass
 
-print(kuupäev_sõnena(kuupäev))
+
+if __name__ == "__main__":
+    kuupäev = input("Sisesta kuupäev kujul DD.MM.YYYY: ")
+
+    print(kuupäev_sõnena(kuupäev))
